@@ -144,8 +144,6 @@ class SES {
 
 		$ses = $this->get_client();
 
-		error_log(var_export($attachments));
-
 		if ( is_wp_error( $ses ) ) {
 			return $ses;
 		}
